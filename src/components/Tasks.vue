@@ -10,7 +10,7 @@ import Amplify, { API } from 'aws-amplify';
 
 @Component
 export default class HelloWorld extends Vue {
-  private msg = "There is tasks";
+  private msg = "There is no task...";
 
   private created() {
     let apiName = 'tasks';
