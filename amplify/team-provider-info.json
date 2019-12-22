@@ -9,6 +9,11 @@
             "UnauthRoleName": "amplifytodo-master-20191222154853-unauthRole",
             "StackName": "amplifytodo-master-20191222154853",
             "StackId": "arn:aws:cloudformation:ap-northeast-1:307316248343:stack/amplifytodo-master-20191222154853/1e77bd10-2487-11ea-9f1f-0e8a9cd56576"
+        },
+        "categories": {
+            "auth": {
+                "cognitob42c5bf5": {}
+            }
         }
     }
 }

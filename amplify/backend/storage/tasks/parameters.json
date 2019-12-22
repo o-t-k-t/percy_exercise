@@ -1,0 +1,5 @@
+{
+    "tableName": "tasks",
+    "partitionKeyName": "taskID",
+    "partitionKeyType": "N"
+}
