@@ -6,10 +6,28 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import Amplify, { API } from 'aws-amplify';
 
 @Component
 export default class HelloWorld extends Vue {
   private msg = "There is tasks";
+
+  private created() {
+    let apiName = 'tasks';
+    let path = '/';
+    let myInit = { // OPTIONAL
+        headers: {}, // OPTIONAL
+        response: true, // OPTIONAL (return the entire Axios response object instead of only response.data)
+        queryStringParameters: {}
+    }
+
+    API.get(apiName, path, myInit).then(response => {
+        console.log(response);
+        // Add your code here
+    }).catch(error => {
+        console.log(error.response);
+    });
+  }
 }
 </script>
 

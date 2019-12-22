@@ -9,7 +9,17 @@ const components = require('aws-amplify-vue');
 
 Vue.config.productionTip = false;
 
-Amplify.configure(aws_exports);
+Amplify.configure({
+  API: {
+    endpoints: [
+      {
+          name: "tasks",
+          endpoint: "https://5udgakj7ra.execute-api.ap-northeast-1.amazonaws.com/v1/tasks",
+          region: "ap-northeast-1"
+      }
+    ]
+  }
+});
 
 /* eslint-disable no-new */
 new Vue({
