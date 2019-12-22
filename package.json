@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   },
   "dependencies": {
     "@aws-amplify/auth": "^2.1.2",
@@ -24,6 +25,8 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@percy-io/percy-storybook": "^2.1.0",
+    "@percy/script": "^1.0.2",
     "@types/jest": "^23.1.4",
     "@vue/cli-plugin-babel": "^3.12.0",
     "@vue/cli-plugin-e2e-nightwatch": "^3.12.0",
