@@ -1,0 +1,14 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "amplifytodo-master-20191222154853-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307316248343:role/amplifytodo-master-20191222154853-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307316248343:role/amplifytodo-master-20191222154853-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplifytodo-master-20191222154853-deployment",
+            "UnauthRoleName": "amplifytodo-master-20191222154853-unauthRole",
+            "StackName": "amplifytodo-master-20191222154853",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:307316248343:stack/amplifytodo-master-20191222154853/1e77bd10-2487-11ea-9f1f-0e8a9cd56576"
+        }
+    }
+}
